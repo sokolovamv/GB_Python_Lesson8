@@ -1,7 +1,7 @@
 import csv
 from pathlib import Path
 
-# чтение json csv
+# чтение csv
 def read_csv() -> list:
     employee = []
     with open(Path.cwd()/'database.csv','r',encoding='utf-8') as fin:
@@ -17,12 +17,14 @@ def read_csv() -> list:
             employee.append(temp)
     return employee
 
+# дозапись в csv
 def write_csv(employees: list):
     with open(Path.cwd() / 'database.csv', 'a', encoding = 'utf-8') as fout:
         csv_writer = csv.writer(fout)
         for employee in employees:
             csv_writer.writerow(employee.values())
 
+# запись в csv
 def write_csv_w(employees: list):
     with open(Path.cwd() / 'database.csv', 'w', encoding = 'utf-8') as fout:
         csv_writer = csv.writer(fout)

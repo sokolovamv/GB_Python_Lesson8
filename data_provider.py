@@ -51,6 +51,7 @@ def get_salary():
             print('Пожалуйста, введите зарплату в правильном формате')
     return salary
 
+# список со словарем
 def data_collection():
     temp = {}
     employee = []
