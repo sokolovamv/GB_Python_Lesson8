@@ -20,20 +20,3 @@ elif sh.show_menu() == 5:
     search.update_employee(input('Введите фамилию сотрудника для обновления информации: '))
 else: 
     print('Перезапустите программу и введите праильную цифру из меню')
-
-
-    
-
-
-
-#    print(cs.read_csv_text())
-#elif sh.show_menu() == 2:
-
-#print(cs.read_csv())
-#
-#print(js.read_json())
-#print(js.read_json())
-#elif sh.show_menu() == 3:
- #   tx.create_txt()
-#else:
- #   print('Перезапустите программу, такого пункта в меню нет')
